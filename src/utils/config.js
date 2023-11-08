@@ -16,7 +16,7 @@ const makeAPICall = async (
     if (payload) configs.body = JSON.stringify(payload);
   
     return window
-      .fetch(`https://demo3522726.mockable.io/${path}`, configs)
+      .fetch(`https://frontend-test-api.mvm-tech.xyz/${path}`, configs)
       .then((response) => response.json())
       .catch((err) => err);
   };
